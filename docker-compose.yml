@@ -1,0 +1,36 @@
+#Componer distintas imagenes o contenedoresen docker
+
+#Especificamos version docker compose
+version: "3"
+
+#Especificar los servicios(imagenes a crear)
+services:
+    api: 
+        #Nombre de nuestro contenedor
+        container_name: api_sps
+        #En caso de que haya un error reiniciar
+        restart : always
+        #Correr los directorios, directorio actual
+        build : .
+        #Especificacion de puertos, que corra del 8090 al 8090
+        ports: 
+            - "8090:8090"
+        #Enlazamos con mongo
+        links: 
+            - mongo
+        #Agregamos un volumen
+        volumes: 
+            #todo lo que esta ahi, se copie en la siguiente directorio
+            - .:/usr/src/app
+        
+    #Contenedor enlazado
+    mongo:
+        #Nombre de nuestro contenedor
+        container_name: base_mongo
+        #Imagen en la que esta basada
+        image: mongo
+        #Especificamos los puertos la conexion
+        ports: 
+            - "27018:27017"
+
+

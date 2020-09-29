@@ -1,0 +1,3 @@
+#Archivo docker para ignorar archivos no necesitados
+
+node_modules
