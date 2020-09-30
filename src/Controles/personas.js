@@ -1,6 +1,6 @@
 'use strict'
 
-//Funciones para el funcionesmiento de la api
+//Funciones para el funcionamiento de la api
 
 //importamos 
 //Usar nuestro Modelo Persona-mongoose

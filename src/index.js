@@ -17,7 +17,6 @@ mongoose.connect(config.db, (err, res) => {
     console.log('Conexion a la base de datos exitosa !!!');
 })
 
-
 //Usamos las configuraciones de conexion para la API
 app.listen(config.port, () => {
     //Mensaje que se muestra en nuestra terminal

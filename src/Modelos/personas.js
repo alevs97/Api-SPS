@@ -1,6 +1,6 @@
 'use strict'
 
-//Definimos los archivos JSON, por medio de nuestro esquema
+//Definimos el documento, por medio de nuestro esquema
 
 //Instanciamos mongoose, requerimiento 
 const mongoose = require('mongoose')

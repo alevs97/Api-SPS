@@ -1,4 +1,4 @@
-//Aqui ira la cunfionalidad del express
+//Aqui ira la funcionalidad del express
 
 //Importamos express
 const express = require('express')
