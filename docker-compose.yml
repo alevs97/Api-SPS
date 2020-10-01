@@ -31,6 +31,6 @@ services:
         image: mongo
         #Especificamos los puertos la conexion
         ports: 
-            - "27017:27017"
+            - "27018:27017"
 
 
